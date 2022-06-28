@@ -31,7 +31,7 @@ class VinylController extends AbstractController
     public function browse(string $genre = null): Response
     {
         if ($genre) {
-            $title = 'Genre: ' . u(str_replace('-', ' ', $slug))->title(true);
+            $title = 'Genre: ' . u(str_replace('-', ' ', $genre))->title(true);
         }
         else {
             $title = 'All Genres';
