@@ -7,6 +7,9 @@
 
 <div>
     <h3>Tracks :</h3>
+
+    {{ dump() }}
+
     <ul>
         {% for track in tracks %}
             <li>{{ track.song }} - {{ track.artist }}</li>
